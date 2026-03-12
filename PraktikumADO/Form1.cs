@@ -27,5 +27,12 @@ namespace PraktikumADO
         {
 
         }
+
+        private void Koneksi()
+        {
+            conn = new SqlConnection(
+                "Data Source=MSI\\AWAYYY Catalog=USE DBAkademikADO;\r\nIntegrated Security=True"
+            );
+        }
     }
 }
