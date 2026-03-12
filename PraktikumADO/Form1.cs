@@ -34,5 +34,22 @@ namespace PraktikumADO
                 "Data Source=MSI\\AWAYYY Catalog=USE DBAkademikADO;\r\nIntegrated Security=True"
             );
         }
+
+        private void btnConnect_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Koneksi();
+                conn.Open();
+
+                MessageBox.Show("Koneksi berhasil");
+
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
