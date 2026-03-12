@@ -67,9 +67,12 @@ namespace PraktikumADO
 
                 txtHasil.Text = jumlah.ToString();
 
-               
+                conn.Close();
             }
-            
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
