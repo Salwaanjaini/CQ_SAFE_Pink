@@ -147,6 +147,11 @@ namespace PraktikumADO
             }
         }
 
+        private void btnUpdateMK_Click(object sender, EventArgs e)
+        {
+            
+        }
+
     }
 
 
