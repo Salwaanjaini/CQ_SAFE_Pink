@@ -100,7 +100,10 @@ namespace PraktikumADO
             }
         }
 
-
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+           
+        }
     }
 
 
